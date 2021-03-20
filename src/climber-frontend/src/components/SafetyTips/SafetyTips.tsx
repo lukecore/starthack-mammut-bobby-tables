@@ -25,7 +25,6 @@ class SafetyTips extends React.Component<any, any>  {
   }
 
   getHTMLEventType(event: IEvent, i:number) {
-    console.log(event)
     switch (event.seriousness) {
       case "high": return (<div key={"event"+i}><p className={styles.Heavy}>!</p><p>{i18n.t("heavySeverity")}</p></div>)
       case "medium": return (<div key={"event"+i}><p className={styles.Middle}>!</p><p>{i18n.t("middleSeverity")}</p></div>)
