@@ -1,4 +1,5 @@
 import React from 'react';
+import i18n from '../../i18n';
 import styles from './SaftyTips.module.scss';
 
 interface IEvent {
@@ -23,13 +24,14 @@ class SaftyTips extends React.Component<any, any>  {
 
   getHTMLEventType(event: IEvent, i:number) {
     switch (event.severity) {
-      case 1: return (<div key={"event"+i}><i>Heavy</i><p></p></div>)
-      case 2: return (<div key={"event"+i}><i>light</i><p></p></div>)
-      default: return (<div key={"event"+i}><i>undefind</i><p></p></div>)
+      case 1: return (<div key={"event"+i}><p className={styles.Heavy}>!</p><p>{i18n.t("heavySeverity")}</p></div>)
+      case 2: return (<div key={"event"+i}><i className={styles.Middle}>!</i><p>{i18n.t("middleSeverity")}</p></div>)
+      default: return (<div></div>)
     }
   }
 
   render() {
+
     return (
       <div className={styles.SaftyTips}>
         {this.state.events.map(this.getHTMLEventType)}

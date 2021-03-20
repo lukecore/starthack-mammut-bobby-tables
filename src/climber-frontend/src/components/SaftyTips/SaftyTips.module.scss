@@ -1,1 +1,35 @@
-.SaftyTips {}
+.SaftyTips {
+
+    div{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+}
+
+i{
+    font-style: normal;
+}
+
+.Heavy{
+    width: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1,2rem;
+    line-height: 2rem;
+    margin-right: 10px;
+}
+.Middle{
+    width: 2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1,2rem;
+    line-height: 2rem;
+    margin-right: 10px;
+}
+
