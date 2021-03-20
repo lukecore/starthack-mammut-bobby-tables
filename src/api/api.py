@@ -14,7 +14,7 @@ def status():
 
 @app.route('/user/<id>/climbs/<climb_id>/falls')
 def get_fall(id, climb_id):
-    with open('../../resources/vertical/40587108-e1a8-56ae-8c7f-1853f009b7c6.json') as f:
+    with open('resources/vertical/40587108-e1a8-56ae-8c7f-1853f009b7c6.json') as f:
         data = json.load(f)
 
     detector = accident_detector.AccidentDetector(data)
