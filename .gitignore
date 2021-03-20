@@ -128,6 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#Intellij Stuff
+#Mac Stuff
 .DS_Store
+
+#Intellij Stuff
 .idea
