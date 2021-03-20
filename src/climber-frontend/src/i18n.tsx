@@ -8,8 +8,10 @@ const resources = {
     translation: {
           "heavySeverity": "Lorem Ipusm Heavy",
           "middleSeverity": "Lorem Ipusm Middle",
-          "saftyTipsTitle": "Safty Tips",
-          "friendsTitle": "Friends"
+          "saftyTipsTitle": "Safety tips",
+          "friendsTitle": "Friends",
+          "pageTitle": "COMPARE WITH FRIENDS",
+          "plottTitle": "Your climb"
     }
   },
   de: {
@@ -17,7 +19,9 @@ const resources = {
             "heavySeverity": "Lorem Ipusm Stark",
             "middleSeverity": "Lorem Ipusm Mittel",
             "saftyTipsTitle": "Sicherheitstips",
-            "friendsTitle": "Freunde"
+            "friendsTitle": "Freunde",
+            "pageTitle": "COMPARE WITH FRIENDS",
+            "plottTitle": "Deine Klettereinheit"
     }
   }
 };

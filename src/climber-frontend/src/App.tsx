@@ -1,19 +1,22 @@
-import React from 'react';
 import './App.scss';
 import Friends from './components/Friends/Friends';
-import SaftyTips from './components/SaftyTips/SaftyTips';
-import ScatterplotXY from './components/Scatterplot/ScatterplotXY';
-import ScatterplotYZ from './components/Scatterplot/ScatterplotYZ';
+import SafetyTips from './components/SafetyTips/SafetyTips';
+import Header from './components/Header/Header'
+import Scatterplot from './components/Scatterplot/Scatterplot'
+import i18n from './i18n';
 
 function App() {
   return (
     <div className="App">
-      <div className="Plotts">
-        <ScatterplotXY></ScatterplotXY>
-        <ScatterplotYZ></ScatterplotYZ>
+      <Header></Header>
+      <div className="Content">
+        <div className="Block">
+          <h2>{i18n.t("plottTitle")}</h2>
+          <Scatterplot></Scatterplot>
+        </div>
+        <SafetyTips className="Block"></SafetyTips>
+        <Friends className="Block"></Friends>
       </div>
-      <SaftyTips></SaftyTips>
-      <Friends></Friends>
     </div>
   );
 }

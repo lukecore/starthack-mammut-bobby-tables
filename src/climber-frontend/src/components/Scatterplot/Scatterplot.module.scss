@@ -1,9 +1,16 @@
+.Plotts{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  
+  }
+
 .Scatterplot {
     height: 500px;
 }
 .ScatterplotYZ {
-    width: 20%;
+    width: 30%;
 }
 .ScatterplotXY{
-  width: 80%;
+  width: 70%;
 }

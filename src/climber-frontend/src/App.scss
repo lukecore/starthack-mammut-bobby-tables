@@ -1,5 +1,8 @@
-.Plotts{
-  display: flex;
-  overflow: hidden;
-  width: 100%;
+@import 'styles/font.styles.scss';
+@import 'styles/normalize.styles.scss';
+.Content{
+  .Block{ 
+  padding: 1rem;
+  }
 }
+

@@ -1,13 +1,13 @@
 import React from 'react';
 import i18n from '../../i18n';
-import styles from './SaftyTips.module.scss';
+import styles from './SafetyTips.module.scss';
 
 interface IEvent {
   time?: string;
   severity: number
 }
 
-class SaftyTips extends React.Component<any, any>  {
+class SafetyTips extends React.Component<any, any>  {
   constructor(props: any) {
     super(props);
     this.state = {events:[]}
@@ -25,7 +25,7 @@ class SaftyTips extends React.Component<any, any>  {
   getHTMLEventType(event: IEvent, i:number) {
     switch (event.severity) {
       case 1: return (<div key={"event"+i}><p className={styles.Heavy}>!</p><p>{i18n.t("heavySeverity")}</p></div>)
-      case 2: return (<div key={"event"+i}><i className={styles.Middle}>!</i><p>{i18n.t("middleSeverity")}</p></div>)
+      case 2: return (<div key={"event"+i}><p className={styles.Middle}>!</p><p>{i18n.t("middleSeverity")}</p></div>)
       default: return (<div></div>)
     }
   }
@@ -33,11 +33,11 @@ class SaftyTips extends React.Component<any, any>  {
   render() {
 
     return (
-      <div className={styles.SaftyTips}>
+      <div className={styles.SafetyTips}>
         <h2>{i18n.t("saftyTipsTitle")}</h2>
         {this.state.events.map(this.getHTMLEventType)}
       </div>)
   }
 };
 
-export default SaftyTips;
+export default SafetyTips;
