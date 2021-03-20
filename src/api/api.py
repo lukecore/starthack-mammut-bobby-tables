@@ -1,10 +1,13 @@
 import json
 import os
 from flask import Flask
+from flask_cors import CORS
+
 from analyser import accident_detector
 
 app = Flask(__name__)
 # app.config.from_object(os.environ['APP_SETTINGS'])
+CORS(app)
 
 
 @app.route('/')
