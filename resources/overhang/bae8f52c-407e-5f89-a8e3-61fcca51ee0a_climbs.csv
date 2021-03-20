@@ -1,0 +1,2 @@
+climb_index,start_time,end_time,duration,gap,h1,h2,left_moves_count,right_moves_count,left_time_moving,right_time_moving,left_time_on_hold,right_time_on_hold,time_on_hold,time_moving,left_bias,right_bias,moves_count,height_gain_total,topout,topout_height,climb_type,tag
+0,2021-02-25 13:45:58.039999962+00:00,2021-02-25 13:49:58.839999914+00:00,240.79999995231628,,256.5350929105755,267.8257137270483,26,31,31.299999954,37.39999961499999,180.24000000953674,204.84000039100647,192.5400002002716,68.699999569,0.46805858476695505,0.531941415233045,57,13.881240160250137,False,0,SPORT,
