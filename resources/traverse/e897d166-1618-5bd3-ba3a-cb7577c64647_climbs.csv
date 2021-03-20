@@ -1,0 +1,2 @@
+climb_index,start_time,end_time,duration,gap,h1,h2,left_moves_count,right_moves_count,left_time_moving,right_time_moving,left_time_on_hold,right_time_on_hold,time_on_hold,time_moving,left_bias,right_bias,moves_count,height_gain_total,topout,topout_height,climb_type,tag
+0,2021-02-25 13:13:12.960000038+00:00,2021-02-25 13:16:06.960000038+00:00,174.0,,254.07017460553158,254.68050574663175,38,26,38.600000146,24.099999906,137.1399998664856,151.3400001525879,144.24000000953674,62.700000052,0.47538824132493857,0.5246117586750614,64,2.550575704481722,True,0,BOULDER,

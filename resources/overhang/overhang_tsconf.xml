@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeseries date="2021-03-19T23:50:10+01:00" version="1.0">
+    <tracksource sample-type="Continuous Rate"
+        source-url="file:///Users/taadico1/Projects/86-StartHack/MAMMUT-STARTHACK21/data/overhang/overhang.csv"
+        time-column="0" time-origin="179163">
+        <property key="provider" value="mpi.eudico.client.annotator.timeseries.csv.CSVServiceProvider"/>
+        <track derivative="0" name="Left_AP">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="1" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="6.613055" min="-4.727057"/>
+            <color>255,0,0</color>
+        </track>
+        <track derivative="0" name="Right_UR">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="5" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="8.898198" min="-5.93025"/>
+            <color>0,255,0</color>
+        </track>
+        <track derivative="0" name="Left_DP">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="3" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="2.400378" min="-4.748116"/>
+            <color>0,0,204</color>
+        </track>
+        <track derivative="0" name="Left_UR">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="2" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="7.831956" min="-3.797396"/>
+            <color>0,255,0</color>
+        </track>
+        <track derivative="0" name="Right_AP">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="4" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="4.092555" min="-4.837429"/>
+            <color>255,0,0</color>
+        </track>
+        <track derivative="0" name="Right_DP">
+            <property key="detect-range" value="true"/>
+            <sample-position>
+                <pos col="6" row="0"/>
+            </sample-position>
+            <description/>
+            <units/>
+            <range max="4.059335" min="-4.438172"/>
+            <color>0,0,255</color>
+        </track>
+    </tracksource>
+</timeseries>
