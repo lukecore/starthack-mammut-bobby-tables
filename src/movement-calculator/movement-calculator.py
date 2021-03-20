@@ -14,6 +14,7 @@ ur_LH = []
 dp_LH = []
 timestamps_LH = []
 
+# Display the different axis acceleration in 2d
 # for value in acc_LH:
 #     ap_LH.append(value['AP'])
 #     ur_LH.append(value['UR'])
@@ -25,21 +26,23 @@ timestamps_LH = []
 # plt.xlabel('time')
 # plt.show()
 
-for value in acc_LH:
-    ap_LH.append(value['AP'])
-    ur_LH.append(value['UR'])
-    dp_LH.append(value['DP'])
-    timestamps_LH.append(value['timestamp'])
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-
-# Data for a three-dimensional line
-# zline = np.linspace(0, 15, 1000)
-# xline = np.sin(zline)
-# yline = np.cos(zline)
-ax.plot3D(ur_LH, dp_LH, ap_LH, 'gray')
-ax.scatter(ur_LH, dp_LH, ap_LH, 'b')
-plt.show()
+# Display the different axis acceleration in 3d
+# for value in acc_LH:
+#     ap_LH.append(value['AP'])
+#     ur_LH.append(value['UR'])
+#     dp_LH.append(value['DP'])
+#     timestamps_LH.append(value['timestamp'])
+#
+# fig = plt.figure()
+# ax = plt.axes(projection='3d')
+#
+# # Data for a three-dimensional line
+# # zline = np.linspace(0, 15, 1000)
+# # xline = np.sin(zline)
+# # yline = np.cos(zline)
+# ax.plot3D(ur_LH, dp_LH, ap_LH, 'gray')
+# ax.scatter(ur_LH, dp_LH, ap_LH, 'b')
+# plt.show()
 
 
