@@ -7,13 +7,17 @@ const resources = {
   en: {
     translation: {
           "heavySeverity": "Lorem Ipusm Heavy",
-          "middleSeverity": "Lorem Ipusm Middle"
+          "middleSeverity": "Lorem Ipusm Middle",
+          "saftyTipsTitle": "Safty Tips",
+          "friendsTitle": "Friends"
     }
   },
   de: {
     translation: {
             "heavySeverity": "Lorem Ipusm Stark",
-            "middleSeverity": "Lorem Ipusm Mittel"
+            "middleSeverity": "Lorem Ipusm Mittel",
+            "saftyTipsTitle": "Sicherheitstips",
+            "friendsTitle": "Freunde"
     }
   }
 };

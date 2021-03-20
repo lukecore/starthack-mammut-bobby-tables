@@ -34,6 +34,7 @@ class SaftyTips extends React.Component<any, any>  {
 
     return (
       <div className={styles.SaftyTips}>
+        <h2>{i18n.t("saftyTipsTitle")}</h2>
         {this.state.events.map(this.getHTMLEventType)}
       </div>)
   }
