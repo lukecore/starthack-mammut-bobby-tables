@@ -24,6 +24,7 @@ class ScatterplotXY extends React.Component<any, any> {
     }
   }
   render() {
+    console.log(this.props.datasets )
     return (
       <div key={this.props.datasets} className={`${styles.Scatterplot} ${styles.ScatterplotXY}`}>
         <Scatter data={{ datasets: this.props.datasets }}
