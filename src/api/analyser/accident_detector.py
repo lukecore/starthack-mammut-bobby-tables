@@ -56,6 +56,8 @@ class AccidentDetector:
         # return list(filter(lambda data: data['acceleration'] >= THRESHOLD or data['acceleration'] <= -THRESHOLD, dataset))
 
         interesting_data_points = list(filter(lambda data: data['acceleration'] >= THRESHOLD_NEGATIVE_ACCELERATION or data['acceleration'] <= -THRESHOLD_NEGATIVE_ACCELERATION, dataset))
+
+        # Remove the unwanted anomaly at the beginning
         interesting_data_points = interesting_data_points[1:]
 
         top_acceleration = 0
@@ -64,19 +66,22 @@ class AccidentDetector:
         fall_end = None
         for data in interesting_data_points:
             if data['acceleration'] > top_acceleration:
+                top_acceleration = data['acceleration']
                 fall_start = data
             elif data['acceleration'] < low_acceleration:
+                low_acceleration = data['acceleration']
                 fall_end = data
 
         fall = {
+            # We don't need these nodes at the moment
             # 'start': dataset[0],
             # 'end': dataset[len(dataset) -1],
+            # 'top_acceleration_node': fall_start,
+            # 'top_acceleration_negative_node': fall_end,
             'start_time': dataset[0]['timestamp'],
             'end_time': dataset[len(dataset) -1]['timestamp'],
             'top_acceleration': fall_start['acceleration'],
             'top_acceleration_negative': fall_end['acceleration'],
-            # 'top_acceleration_node': fall_start,
-            # 'top_acceleration_negative_node': fall_end,
             'seriousness': 'high'
         }
         return fall
