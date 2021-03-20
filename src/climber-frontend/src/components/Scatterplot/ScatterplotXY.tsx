@@ -5,12 +5,18 @@ import { Scatter } from 'react-chartjs-2';
 class ScatterplotXY extends React.Component<any, any> {
   constructor(props:any){
     super(props)
+    this.state = {datasets:{}}
     console.log(props, "Hallo")
+    this.datasets = props
+    console.log(this.datasets)
   }
+  
 
   componentDidMount() {
+    //this.setState({datasets:this.props.datasets})
     console.log(this.props);
   }
+  datasets = []
   colors = {
     left: "#11aaff",
     right: "#834522"
@@ -43,9 +49,10 @@ class ScatterplotXY extends React.Component<any, any> {
   componentDidUpdate(props: any) {
   }
   render() {
+    console.log(this.props.datasets)
     return (
-      <div key={this.props.data} className={`${styles.Scatterplot} ${styles.ScatterplotXY}`}>
-        <Scatter data={{ datasets: this.props.data.data }}
+      <div key={this.props.datasets} className={`${styles.Scatterplot} ${styles.ScatterplotXY}`}>
+        <Scatter data={this.props.datasets}
           options={this.options}></Scatter>)
       </div>
     );

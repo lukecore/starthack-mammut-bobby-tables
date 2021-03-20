@@ -8,7 +8,7 @@ import ScatterplotYZ from './ScatterplotYZ';
 class Scatterplot extends React.Component<any, any> {
   constructor(props: any) {
     super(props)
-    this.state = { XYPointCloud: [], XZPointCloud: [] };
+    this.state = { datasets: [], XZPointCloud: [] };
 
   }
   colors = {
@@ -20,7 +20,7 @@ class Scatterplot extends React.Component<any, any> {
   testDataXYRight = { data: [{ x: 2, y: 1 }, { x: 4, y: 3.8 }, { x: 1, y: 5.5 }, { x: 2, y: 6 }], label: "Max Muster right", backgroundColor: this.colors.right, borderWidth: 2, showLine: true, fill: false, borderColor: this.colors.right }
   componentDidMount() {
     //REST
-    this.setState({ XYPointCloud: [this.testDataXYLeft, this.testDataXYRight] }, () => {
+    this.setState({ datasets: [this.testDataXYLeft, this.testDataXYRight] }, () => {
       console.log(this.state);
     });
     
@@ -30,7 +30,7 @@ class Scatterplot extends React.Component<any, any> {
     
     return (
       <div className={`${styles.Plotts}`} >
-        <ScatterplotXY data={this.state.XYPointCloud} ></ScatterplotXY>
+        <ScatterplotXY datasets={this.state.datasets} ></ScatterplotXY>
         <ScatterplotYZ></ScatterplotYZ>
       </div>
     );
@@ -38,3 +38,5 @@ class Scatterplot extends React.Component<any, any> {
 }
 
 export default Scatterplot;
+
+//
