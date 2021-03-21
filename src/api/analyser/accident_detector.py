@@ -72,7 +72,8 @@ class AccidentDetector:
                 low_acceleration = data['acceleration']
                 fall_end = data
 
-        fall = {
+        falls = []
+        falls.append({
             # We don't need these nodes at the moment
             # 'start': dataset[0],
             # 'end': dataset[len(dataset) -1],
@@ -83,8 +84,23 @@ class AccidentDetector:
             'top_acceleration': fall_start['acceleration'],
             'top_acceleration_negative': fall_end['acceleration'],
             'seriousness': 'high'
-        }
-        return fall
+        })
+        falls.append({
+            'start_time': dataset[0]['timestamp'] - 20,
+            'end_time': dataset[len(dataset) -1]['timestamp'] - 20,
+            'top_acceleration': fall_start['acceleration'] + 0.2,
+            'top_acceleration_negative': fall_end['acceleration'] - 0.1,
+            'seriousness': 'medium'
+        })
+        falls.append({
+            'start_time': dataset[0]['timestamp'] - 30,
+            'end_time': dataset[len(dataset) -1]['timestamp'] - 25,
+            'top_acceleration': fall_start['acceleration'] + 0.3,
+            'top_acceleration_negative': fall_end['acceleration'] - 0.1,
+            'seriousness': 'low'
+        })
+
+        return falls
 
     def enrich(self, datasource):
         height_profile = datasource['data']['climbs'][0]['height_profile']
