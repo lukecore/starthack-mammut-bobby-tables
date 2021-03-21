@@ -7,6 +7,12 @@ rawData = h5.File("../../resources/vertical/40587108-e1a8-56ae-8c7f-1853f009b7c6
 
 print(list(rawData.keys()))
 
+# Dataset 'acc_LH' // Acceleration on Left Hand
+# Member 'timestamp':
+# Member 'AP': // Anterior-Posterior axis
+# Member 'UR': // Ulna-Radial Axis
+# Member 'DP': // Distal-Proximal Axis
+
 acc_LH = rawData['/acc_LH']
 
 ap_LH = []
