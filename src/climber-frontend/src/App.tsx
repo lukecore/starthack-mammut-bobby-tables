@@ -12,6 +12,7 @@ function App() {
       <div className="Content">
         <div className="Block">
           <h1>{i18n.t("plottTitle")}</h1>
+          <p>{i18n.t("plottText")}</p>
           <Scatterplot></Scatterplot>
         </div>
         <SafetyTips className="Block"></SafetyTips>

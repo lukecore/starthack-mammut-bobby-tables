@@ -12,7 +12,8 @@ const resources = {
           "saftyTipsTitle": "Safety tips",
           "friendsTitle": "Friends",
           "pageTitle": "COMPARE WITH FRIENDS",
-          "plottTitle": "Eigerrun, 4a"
+          "plottTitle": "Eigerrun, 4a",
+          "plottText": "Use the slider below to track your climbing route. Blue is your left hand red is your right hand."
     }
   },
   de: {
@@ -23,7 +24,8 @@ const resources = {
             "saftyTipsTitle": "Sicherheitstips",
             "friendsTitle": "Freunde",
             "pageTitle": "COMPARE WITH FRIENDS",
-            "plottTitle": "Eigerrun, 4a"
+            "plottTitle": "Eigerrun, 4a",
+            "plottText":"Nutze den Slider unten um deine Kletterroute nachzuverfolgen. Blau ist deine linke Hand rot ist deine rechte Hands"
     }
   }
 };
