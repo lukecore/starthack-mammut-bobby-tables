@@ -37,61 +37,55 @@ class Scatterplot extends React.Component<any, any> {
         "hand": "left"
     },
     {
-        "x": -0.25,
+        "x": 0,
         "y": 2.25,
         "time": "2021-03-20T19:03:13.745Z",
         "hand": "left"
     },
     {
-        "x": -0.5,
-        "y": 2.5,
-        "time": "2021-03-20T19:04:13.755Z",
-        "hand": "left"
-    },
-    {
-        "x": -0.75,
+        "x": 0.2,
         "y": 3,
         "time": "2021-03-20T19:05:13.775Z",
         "hand": "left"
     },
     {
-        "x": -1,
+        "x": 0.25,
         "y": 3.75,
         "time": "2021-03-20T19:06:13.785Z",
         "hand": "left"
     },
     {
-        "x": -1,
+        "x": 0.1,
         "y": 4.75,
         "time": "2021-03-20T19:07:13.795Z",
         "hand": "left"
     },
     {
-        "x": -1,
+        "x": 0.2,
         "y": 6,
         "time": "2021-03-20T19:08:13.805Z",
         "hand": "left"
     },
     {
-        "x": -1.5,
+        "x": 0.15,
         "y": 7,
         "time": "2021-03-20T19:09:13.815Z",
         "hand": "left"
     },
     {
-        "x": -1.5,
+        "x": 0.05,
         "y": 8,
         "time": "2021-03-20T19:10:13.825Z",
         "hand": "left"
     },
     {
-        "x": -0.5,
+        "x": 0,
         "y": 9,
         "time": "2021-03-20T19:11:13.835Z",
         "hand": "left"
     },
     {
-        "x": 0,
+        "x": -0.05,
         "y": 9,
         "time": "2021-03-20T19:12:13.845Z",
         "hand": "left"
@@ -99,43 +93,43 @@ class Scatterplot extends React.Component<any, any> {
 ], label: "Max Muster left", backgroundColor: this.colors.preview, borderWidth: 1, showLine: true, fill: false, borderColor: this.colors.preview }
   testDataXYRight = { data: [
     {
-        "x": 0.5,
+        "x": 0.3,
         "y": 1,
         "time": "2021-03-20T19:00:13.700Z",
         "hand": "right"
     },
     {
-        "x": 0.6,
+        "x": 0.4,
         "y": 1.5,
         "time": "2021-03-20T19:01:13.710Z",
         "hand": "right"
     },
     {
-        "x": 0.2,
+        "x": 0.4,
         "y": 1.75,
         "time": "2021-03-20T19:02:13.720Z",
         "hand": "right"
     },
     {
-        "x": -0.2,
+        "x": 0.4,
         "y": 2.25,
         "time": "2021-03-20T19:03:13.730Z",
         "hand": "right"
     },
     {
-        "x": 0.1,
+        "x": 0.35,
         "y": 2.5,
         "time": "2021-03-20T19:04:13.740Z",
         "hand": "right"
     },
     {
-        "x": 0.25,
+        "x": 0.35,
         "y": 3,
         "time": "2021-03-20T19:05:13.750Z",
         "hand": "right"
     },
     {
-        "x": -0.5,
+        "x": 0.5,
         "y": 3.75,
         "time": "2021-03-20T19:06:13.760Z",
         "hand": "right"
@@ -165,13 +159,13 @@ class Scatterplot extends React.Component<any, any> {
         "hand": "right"
     },
     {
-        "x": 0,
+        "x": 0.3,
         "y": 8.5,
         "time": "2021-03-20T19:11:13.810Z",
         "hand": "right"
     },
     {
-        "x": 1,
+        "x": 0.1,
         "y": 9,
         "time": "2021-03-20T19:12:13.820Z",
         "hand": "right"
@@ -201,12 +195,6 @@ class Scatterplot extends React.Component<any, any> {
         "x": -0.25,
         "y": 2.25,
         "time": "2021-03-20T19:03:13.745Z",
-        "hand": "left"
-    },
-    {
-        "x": -0.5,
-        "y": 2.5,
-        "time": "2021-03-20T19:04:13.755Z",
         "hand": "left"
     },
     {
