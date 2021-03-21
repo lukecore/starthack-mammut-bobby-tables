@@ -7,6 +7,10 @@
 
 .Scatterplot {
     height: 500px;
+
+    @media only screen and (max-width: 600px) {
+        height: 400px;
+    }
 }
 .ScatterplotYZ {
     width: 30%;

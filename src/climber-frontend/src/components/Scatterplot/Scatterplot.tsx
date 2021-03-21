@@ -1,6 +1,5 @@
 import {Slider} from '@material-ui/core';
 import React from 'react';
-import { convertToObject } from 'typescript';
 import styles from './Scatterplot.module.scss';
 import ScatterplotXY from './ScatterplotXY';
 import ScatterplotYZ from './ScatterplotYZ';
@@ -14,9 +13,9 @@ class Scatterplot extends React.Component<any, any> {
     this.getSliderValue = this.getSliderValue.bind(this);
   }
   colors = {
-    left: "#11aaff",
-    right: "#834522",
-    preview: "#e1e1e1"
+    left: "#2b84c1",
+    right: "#e84855",
+    preview: "#d6e4ed"
   }
   testDataXYLeft = { data: [
     {
@@ -100,55 +99,55 @@ class Scatterplot extends React.Component<any, any> {
 ], label: "Max Muster left", backgroundColor: this.colors.preview, borderWidth: 1, showLine: true, fill: false, borderColor: this.colors.preview }
   testDataXYRight = { data: [
     {
-        "x": 2,
+        "x": 0.5,
         "y": 1,
         "time": "2021-03-20T19:00:13.700Z",
         "hand": "right"
     },
     {
-        "x": 2,
+        "x": 0.6,
         "y": 1.5,
         "time": "2021-03-20T19:01:13.710Z",
         "hand": "right"
     },
     {
-        "x": 2,
+        "x": 0.2,
         "y": 1.75,
         "time": "2021-03-20T19:02:13.720Z",
         "hand": "right"
     },
     {
-        "x": 1.75,
+        "x": -0.2,
         "y": 2.25,
         "time": "2021-03-20T19:03:13.730Z",
         "hand": "right"
     },
     {
-        "x": 1.5,
+        "x": 0.1,
         "y": 2.5,
         "time": "2021-03-20T19:04:13.740Z",
         "hand": "right"
     },
     {
-        "x": 1.25,
+        "x": 0.25,
         "y": 3,
         "time": "2021-03-20T19:05:13.750Z",
         "hand": "right"
     },
     {
-        "x": 1,
+        "x": -0.5,
         "y": 3.75,
         "time": "2021-03-20T19:06:13.760Z",
         "hand": "right"
     },
     {
-        "x": 1,
+        "x": 0.5,
         "y": 4.75,
         "time": "2021-03-20T19:07:13.770Z",
         "hand": "right"
     },
     {
-        "x": 1,
+        "x": 0.4,
         "y": 6,
         "time": "2021-03-20T19:08:13.780Z",
         "hand": "right"
@@ -166,13 +165,13 @@ class Scatterplot extends React.Component<any, any> {
         "hand": "right"
     },
     {
-        "x": 1.5,
-        "y": 9,
+        "x": 0,
+        "y": 8.5,
         "time": "2021-03-20T19:11:13.810Z",
         "hand": "right"
     },
     {
-        "x": 2,
+        "x": 1,
         "y": 9,
         "time": "2021-03-20T19:12:13.820Z",
         "hand": "right"
@@ -267,49 +266,49 @@ class Scatterplot extends React.Component<any, any> {
     },
     {
         "x": 0,
-        "y": 1.6,
+        "y": 1.5,
         "time": "2021-03-20T19:01:13.710Z",
         "hand": "right"
     },
     {
-        "x": 0,
-        "y": 1.9,
+        "x": -0.2,
+        "y": 1.75,
         "time": "2021-03-20T19:02:13.720Z",
         "hand": "right"
     },
     {
-        "x": -0.25,
-        "y": 2.4,
+        "x": -0.35,
+        "y": 2.25,
         "time": "2021-03-20T19:03:13.730Z",
         "hand": "right"
     },
     {
         "x": -0.5,
-        "y": 2.9,
+        "y": 2.5,
         "time": "2021-03-20T19:04:13.740Z",
         "hand": "right"
     },
     {
-        "x": -0.75,
-        "y": 3.2,
+        "x": -0.9,
+        "y": 3,
         "time": "2021-03-20T19:05:13.750Z",
         "hand": "right"
     },
     {
-        "x": -1,
+        "x": -1.2,
         "y": 3.75,
         "time": "2021-03-20T19:06:13.760Z",
         "hand": "right"
     },
     {
         "x": -1,
-        "y": 4.9,
+        "y": 4.75,
         "time": "2021-03-20T19:07:13.770Z",
         "hand": "right"
     },
     {
-        "x": -1,
-        "y": 6.2,
+        "x": -0.9,
+        "y": 6,
         "time": "2021-03-20T19:08:13.793Z",
         "hand": "right"
     },
@@ -321,13 +320,13 @@ class Scatterplot extends React.Component<any, any> {
     },
     {
         "x": -1.5,
-        "y": 8.5,
+        "y": 8,
         "time": "2021-03-20T19:10:13.800Z",
         "hand": "right"
     },
     {
         "x": -0.5,
-        "y": 8.9,
+        "y": 8.5,
         "time": "2021-03-20T19:11:13.810Z",
         "hand": "right"
     },
@@ -341,7 +340,7 @@ class Scatterplot extends React.Component<any, any> {
 
 
   getStepsXY() {
-    return this.testDataXYLeft.data.concat(this.testDataXYRight.data).sort((el1, el2) => new Date(el1.time) > new Date(el2.time) ? 1 : -1).map((el, i, all) => ({ value: 100/all.length*i, label:  i }))
+    return this.testDataXYLeft.data.concat(this.testDataXYRight.data).sort((el1, el2) => new Date(el1.time) > new Date(el2.time) ? 1 : -1).map((el, i, all) => ({ value: 100/all.length*i, label:  i%4 !== 0 ? "": Math.round(new Date(new Date(el.time).getTime() - new Date(all[0].time).getTime()).getTime()/1000/60) + "min"}))
   }
   getStepsDetailsXY() {
     return this.testDataXYLeft.data.concat(this.testDataXYRight.data).sort((el1, el2) => new Date(el1.time) > new Date(el2.time) ? 1 : -1).map((el, i, all) => ({ ...el, value: 100/all.length*i, label:  i }))
@@ -356,15 +355,7 @@ class Scatterplot extends React.Component<any, any> {
 
   }
 
-  //TODO
-  getDataDesign(data: any) {
-    return data.isLeft ? { data: [data.data], label: "left", backgroundColor: this.colors.left, borderWidth: 2, showLine: true, fill: false, borderColor: this.colors.left } : { data: [data.data], label: "Max Muster right", backgroundColor: this.colors.right, borderWidth: 2, showLine: true, fill: false, borderColor: this.colors.right }
-  }
-
-  getWallProfile(data: []) {
-    return { data: [], backgroundColor: this.colors.preview, borderWidth: 0, showLine: true, borderColor: this.colors.preview, pointRadius: 0, label: "shape", showTooltips: false }
-  }
-value = 0;
+  value = 0;
   getSliderValue(value:any) {
     if(Number(this.value) === Number(value)){
       this.value = value

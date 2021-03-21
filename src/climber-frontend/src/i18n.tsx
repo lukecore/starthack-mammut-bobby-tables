@@ -6,22 +6,24 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-          "heavySeverity": "Lorem Ipusm Heavy",
-          "middleSeverity": "Lorem Ipusm Middle",
+          "heavySeverity": "We have detected a heavy fall. Treat yourself with a regeneration day.",
+          "middleSeverity": "We have detected a middle fall. Treat yourself with a regeneration day.",
+          "lowSeverity": "We have detected a low fall. Take care of you.",
           "saftyTipsTitle": "Safety tips",
           "friendsTitle": "Friends",
           "pageTitle": "COMPARE WITH FRIENDS",
-          "plottTitle": "Your climb"
+          "plottTitle": "Eigerrun, 4a"
     }
   },
   de: {
     translation: {
             "heavySeverity": "Lorem Ipusm Stark",
             "middleSeverity": "Lorem Ipusm Mittel",
+            "lowSeverity": "DE - We have detected a low fall. Take care of you.",
             "saftyTipsTitle": "Sicherheitstips",
             "friendsTitle": "Freunde",
             "pageTitle": "COMPARE WITH FRIENDS",
-            "plottTitle": "Deine Klettereinheit"
+            "plottTitle": "Eigerrun, 4a"
     }
   }
 };

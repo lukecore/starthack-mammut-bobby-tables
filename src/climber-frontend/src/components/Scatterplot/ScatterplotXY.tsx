@@ -7,6 +7,9 @@ class ScatterplotXY extends React.Component<any, any> {
   options = {
     maintainAspectRatio: false,
     resonsive: true,
+    animation: {
+      duration: 0
+    },
     legend: {
       display: false,
     },

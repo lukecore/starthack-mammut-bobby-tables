@@ -8,6 +8,9 @@ class ScatterplotYZ extends React.Component<any, any> {
     legend: {
       display: false
     },
+    animation: {
+      duration: 0
+    },
     scales: {
       yAxes: [{
         ticks: {
