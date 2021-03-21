@@ -1,0 +1,4 @@
+{
+  "root": "src/climber-frontend/build/",
+  "clean_urls": true
+}
