@@ -2,5 +2,45 @@
     border-top: 1px solid #ccc;
     padding:1rem 0.2rem;
     margin: 0rem 0.5rem 1rem 0.5rem;
+
+    >div{
+        
+        border-bottom: 1px solid #ccc;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.1rem 0;
+        padding: 0px 3px;
+
+        img{
+            width: 2rem;
+            max-width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+
+        .User{
+            display: flex;
+            align-items: center;
+        }
+
+        a{
+            color:#e84855;
+            text-decoration: none;
+            font-size: 0.8rem;
+
+            ::after{
+                content: '>';
+                width:5px;
+                height: 5px;
+            }
+        }
+    }
 }
 

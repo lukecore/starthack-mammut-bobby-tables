@@ -13,7 +13,8 @@ const resources = {
           "friendsTitle": "Friends",
           "pageTitle": "MAMMUT - GRIPCAST",
           "plottTitle": "Eigerrun, 4a",
-          "plottText": "Use the slider below to track your climbing route. Blue is your left hand red is your right hand."
+          "plottText": "Use the slider below to track your climbing route. Blue is your left hand red is your right hand.",
+          "challenge": "challenge"
     }
   },
   de: {
@@ -25,7 +26,8 @@ const resources = {
             "friendsTitle": "Freunde",
             "pageTitle": "COMPARE WITH FRIENDS",
             "plottTitle": "Eigerrun, 4a",
-            "plottText":"Nutze den Slider unten um deine Kletterroute nachzuverfolgen. Blau ist deine linke Hand rot ist deine rechte Hands"
+            "plottText":"Nutze den Slider unten um deine Kletterroute nachzuverfolgen. Blau ist deine linke Hand rot ist deine rechte Hands",
+            "challenge": "herausfordern"
     }
   }
 };
