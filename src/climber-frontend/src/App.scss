@@ -35,3 +35,13 @@ footer{
   }
 }
 
+.PlotAndShare{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  .Social *{
+    margin: -2px;
+  }
+}
+
