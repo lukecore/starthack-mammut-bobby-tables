@@ -15,5 +15,6 @@ heroku static:deploy --app starthack-gripcast-demo
 
 # Backend
 heroku git:remote -a starthack-gripcast-demo-api
+git push heroku master
 
 ```
