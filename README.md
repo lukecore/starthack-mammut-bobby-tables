@@ -33,5 +33,6 @@ heroku git:remote -a starthack-gripcast-api
 git push heroku master
 
 ```
-### Where does our group name come from
+## Where does our group name come from
 ![Our History](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+[Source](https://xkcd.com/327/)
