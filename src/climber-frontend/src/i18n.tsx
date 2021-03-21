@@ -11,7 +11,7 @@ const resources = {
           "lowSeverity": "We have detected a low fall. Take care of you.",
           "saftyTipsTitle": "Safety tips",
           "friendsTitle": "Friends",
-          "pageTitle": "COMPARE WITH FRIENDS",
+          "pageTitle": "MAMMUT - GRIPCAST",
           "plottTitle": "Eigerrun, 4a",
           "plottText": "Use the slider below to track your climbing route. Blue is your left hand red is your right hand."
     }
