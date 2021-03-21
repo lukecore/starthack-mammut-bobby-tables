@@ -16,6 +16,10 @@ We enrich the existing raw data of CLIMBAX with a detailed visualisation of your
 
 ## Technical Documentation:
 - Backend
+```bash
+pip3 install -r requirements.txt
+python3 src/api/api.py
+```  
 - [Frontend](https://github.com/lukecore/starthack-mammut-bobby-tables/blob/main/src/climber-frontend/README.md)
 
 ## Deployment

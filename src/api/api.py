@@ -21,12 +21,12 @@ def get_fall(id, climb_id):
         data = json.load(f)
 
     detector = accident_detector.AccidentDetector(data)
-    fall = detector.find_falls()
+    falls = detector.find_falls()
 
     return {
         'user_id': id,
         'user_name': 'Max Muster',
-        'falls': [fall]
+        'falls': falls
     }
 
 
