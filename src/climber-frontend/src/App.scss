@@ -1,8 +1,28 @@
-@import 'styles/font.styles.scss';
+
 @import 'styles/normalize.styles.scss';
+@import 'styles/font.styles.scss';
 .Content{
   .Block{ 
-  padding: 1rem;
+  padding:  0rem 1rem 1rem 1rem;
+  }
+}
+
+.MuiSlider-markLabel{
+  font-size: 0.7rem !important
+}
+
+.MuiSlider-root{
+  color:#2b84c1 !important
+}
+
+footer{
+
+
+  img{
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
   }
 }
 

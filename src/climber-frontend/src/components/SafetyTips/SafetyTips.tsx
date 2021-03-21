@@ -1,32 +1,35 @@
 import React from 'react';
 import i18n from '../../i18n';
+import fallsService from '../../services/falls.service';
 import styles from './SafetyTips.module.scss';
 
 interface IEvent {
   time?: string;
-  severity: number
+  seriousness: string
 }
 
 class SafetyTips extends React.Component<any, any>  {
   constructor(props: any) {
     super(props);
-    this.state = {events:[]}
+    this.state = {falls:[]}
   }
 
   componentDidMount() {
-    this.setState({events:this.getEvents()})
+    this.getFalls()
   }
 
 
-  getEvents() {
-    return [{ time: "12345", severity: 1 }, { time: "23237", severity: 1 }, { time: "54547", severity: 2 }, { time: "78978", severity: 2 }]
+  async getFalls() {
+    const data = await fallsService.getFalls();
+    this.setState({falls:data})
   }
 
   getHTMLEventType(event: IEvent, i:number) {
-    switch (event.severity) {
-      case 1: return (<div key={"event"+i}><p className={styles.Heavy}>!</p><p>{i18n.t("heavySeverity")}</p></div>)
-      case 2: return (<div key={"event"+i}><p className={styles.Middle}>!</p><p>{i18n.t("middleSeverity")}</p></div>)
-      default: return (<div></div>)
+    switch (event.seriousness) {
+      case "high": return (<div key={"event"+i}><p className={styles.Heavy}>!</p><p>{i18n.t("heavySeverity")}</p></div>)
+      case "medium": return (<div key={"event"+i}><p className={styles.Middle}>!</p><p>{i18n.t("middleSeverity")}</p></div>)
+      case "low": return (<div key={"event"+i}><p className={styles.Low}>!</p><p>{i18n.t("middleSeverity")}</p></div>)
+      default: return (<div key={"event"+i}></div>)
     }
   }
 
@@ -35,7 +38,7 @@ class SafetyTips extends React.Component<any, any>  {
     return (
       <div className={styles.SafetyTips}>
         <h2>{i18n.t("saftyTipsTitle")}</h2>
-        {this.state.events.map(this.getHTMLEventType)}
+        {this.state.falls.map(this.getHTMLEventType)}
       </div>)
   }
 };

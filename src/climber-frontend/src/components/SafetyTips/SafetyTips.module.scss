@@ -14,9 +14,8 @@ i{
     font-style: normal;
 }
 
-.Heavy{
-    width: 2rem;
-    background-color: red;
+.Heavy{width: 2rem;
+    background-color: #e84855;
     color: white;
     border-radius: 100%;
     text-align: center;
@@ -26,7 +25,17 @@ i{
 }
 .Middle{
     width: 2rem;
-    background-color: orange;
+    background-color: #f68e62;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1,2rem;
+    line-height: 2rem;
+    margin-right: 10px;
+}
+.Low{
+    width: 2rem;
+    background-color: #68c6a4;
     color: white;
     border-radius: 100%;
     text-align: center;

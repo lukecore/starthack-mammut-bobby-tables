@@ -11,12 +11,16 @@ function App() {
       <Header></Header>
       <div className="Content">
         <div className="Block">
-          <h2>{i18n.t("plottTitle")}</h2>
+          <h1>{i18n.t("plottTitle")}</h1>
+          <p>{i18n.t("plottText")}</p>
           <Scatterplot></Scatterplot>
         </div>
         <SafetyTips className="Block"></SafetyTips>
         <Friends className="Block"></Friends>
       </div>
+      <footer>
+        <img src="/footer.jpg" alt="footer"></img>
+      </footer>
     </div>
   );
 }
