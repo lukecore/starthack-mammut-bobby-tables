@@ -2,6 +2,10 @@
 @import 'styles/normalize.styles.scss';
 @import 'styles/font.styles.scss';
 .Content{
+max-width: 960px;
+margin:0 auto;
+
+
   .Block{ 
   padding:  0rem 1rem 1rem 1rem;
   }
@@ -12,10 +16,15 @@
 }
 
 .MuiSlider-root{
-  color:#2b84c1 !important
+  color:#2b84c1 !important;
+  width: 98% !important;;
 }
 
+
 footer{
+  @media only screen and (min-width: 641px) {
+    display: none;
+}
 
 
   img{
