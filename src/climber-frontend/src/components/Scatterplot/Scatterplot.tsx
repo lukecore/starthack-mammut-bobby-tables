@@ -375,10 +375,8 @@ class Scatterplot extends React.Component<any, any> {
     newElementsXY.push({ data: rightxy, backgroundColor: this.colors.right, pointRadius: 5, borderColor: this.colors.right, label: "right",borderWidth: 3, showLine: true, fill: false })
     let newStateXY:any = []
     if(this.state.datasetsXY.length === 2){
-      console.log("test")
        newStateXY = [...newElementsXY, ...this.state.datasetsXY.slice(0,2)]
     }else if(this.state.datasetsYZ.length > 1){
-      console.log(...this.state.datasetsXY)
        newStateXY = [...newElementsXY, ...this.state.datasetsXY.slice(2,4)]
     }
 

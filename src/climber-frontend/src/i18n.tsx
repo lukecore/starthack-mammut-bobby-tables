@@ -14,7 +14,10 @@ const resources = {
           "pageTitle": "MAMMUT - GRIPCAST",
           "plottTitle": "Eigerrun, 4a",
           "plottText": "Use the slider below to track your climbing route. Blue is your left hand red is your right hand.",
-          "challenge": "challenge"
+          "challenge": "challenge",
+          "compare": "compare",
+          "acceleration": "Impact",
+          "date": "Date"
     }
   },
   de: {
@@ -27,7 +30,10 @@ const resources = {
             "pageTitle": "COMPARE WITH FRIENDS",
             "plottTitle": "Eigerrun, 4a",
             "plottText":"Nutze den Slider unten um deine Kletterroute nachzuverfolgen. Blau ist deine linke Hand rot ist deine rechte Hands",
-            "challenge": "herausfordern"
+            "challenge": "herausfordern",
+            "compare": "vergleichen",
+            "acceleration": "Aufschlag",
+            "date": "Datum"
     }
   }
 };
