@@ -10,11 +10,11 @@ heroku login
 # Frontend
 cd src/climber-frontend && yarn run build
 cd ../..
-heroku git:remote -a starthack-gripcast-demo
-heroku static:deploy --app starthack-gripcast-demo
+heroku git:remote -a starthack-gripcast
+heroku static:deploy --app starthack-gripcast
 
 # Backend
-heroku git:remote -a starthack-gripcast-demo-api
+heroku git:remote -a starthack-gripcast-api
 git push heroku master
 
 ```
