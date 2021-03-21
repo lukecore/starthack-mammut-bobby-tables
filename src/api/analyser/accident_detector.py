@@ -86,17 +86,17 @@ class AccidentDetector:
             'seriousness': 'high'
         })
         falls.append({
-            'start_time': dataset[0]['timestamp'],
-            'end_time': dataset[len(dataset) -1]['timestamp'],
-            'top_acceleration': fall_start['acceleration'] + 0.2,
-            'top_acceleration_negative': fall_end['acceleration'] - 0.1,
+            'start_time': '2021-02-25T13:30:05.519999',
+            'end_time': '2021-02-25T13:30:06.519999',
+            'top_acceleration': fall_start['acceleration'] - 0.2,
+            'top_acceleration_negative': fall_end['acceleration'] + 0.1,
             'seriousness': 'medium'
         })
         falls.append({
-            'start_time': dataset[0]['timestamp'],
-            'end_time': dataset[len(dataset) -1]['timestamp'],
-            'top_acceleration': fall_start['acceleration'] + 0.3,
-            'top_acceleration_negative': fall_end['acceleration'] - 0.1,
+            'start_time': '2021-02-25T13:30:15.519999',
+            'end_time': '2021-02-25T13:30:36.519999',
+            'top_acceleration': fall_start['acceleration'] - 0.3,
+            'top_acceleration_negative': fall_end['acceleration'] + 0.3,
             'seriousness': 'low'
         })
 
