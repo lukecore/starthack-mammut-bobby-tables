@@ -18,5 +18,20 @@ We enrich the existing raw data of CLIMBAX with a detailed visualisation of your
 - Backend
 - [Frontend](https://github.com/lukecore/starthack-mammut-bobby-tables/blob/main/src/climber-frontend/README.md)
 
+## Deployment
+```bash
+heroku login
+
+# Frontend
+cd src/climber-frontend && yarn run build
+cd ../..
+heroku git:remote -a starthack-gripcast
+heroku static:deploy --app starthack-gripcast
+
+# Backend
+heroku git:remote -a starthack-gripcast-api
+git push heroku master
+
+```
 ### Where does our group name come from
 ![Our History](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
