@@ -1,7 +1,7 @@
 # Mammut Case "Climbex Visualization" by Bobby Tables
 
 ## Our Vision
-We enrich the existing raw data of CLIMBAX with a detailed visualisation of your recent climbing activities to gain valuable insights. Our features will you to improve your performance and ultimately become a safer climber.
+We enrich the existing raw data of CLIMBAX with a detailed visualisation of your recent climbing activities to gain valuable insights. Our features will enable you to improve your performance and ultimately become a safer climber.
 
 ## Description
 *Main idea:* 
